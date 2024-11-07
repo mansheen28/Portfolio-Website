@@ -177,7 +177,7 @@ export const education = [
     img: "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Deakin_University_Logo_2017.svg/1200px-Deakin_University_Logo_2017.svg.png",
     school: "Deakin University",
     date: "March 2023 - November 2024",
-    grade: "77% (Distinction)",
+    grade: "75.5% (Distinction)",
     desc: "Pursuing Master's in Information Technology with a focus on Software Development and Services, cultivating expertise in cutting-edge technologies.",
     degree: "Master of Information Technology (Professional)",
   },

@@ -13,6 +13,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import Certifications from "./components/Certifications";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 
@@ -33,24 +34,25 @@ function App() {
   console.log(openModal)
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router >
+      <Router>
         <Navbar />
         <Body>
           <HeroSection />
           <Wrapper>
             <Skills />
-            <SoftSkills/>
-            <Experience />
+            <SoftSkills />
+            <Education />
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
-            <Education />
+            <Experience />
+            <Certifications/>
             <Contact />
           </Wrapper>
           <Footer />
-          {openModal.state &&
+          {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
+          )}
         </Body>
       </Router>
     </ThemeProvider>
